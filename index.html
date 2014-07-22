@@ -13,6 +13,7 @@
 
 body {
   font-family: Georgia;
+  background-color: #2BCCAB;
 }
 
 .banner {
@@ -25,23 +26,59 @@ body {
 }
 
 #welcome {
-  font-size:80px;
+  font-size:70px;
+  text-align: center;
+  margin: 0 auto;
 }
+
+#subtitle {
+  font-size:30px;
+  font-style: italic;
+  text-align: center;
+}
+
+#titlerow {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.whitespace {
+  background-color: white;
+}
+
+/*.navlist {
+  background-color:white;
+  display: inline;
+  list-style-type: none;
+}*/
 
 </style>
   </head>
   <body>
     <div class="container">
+      <div class="whitespace">
       <div class="row">
         <div class="col-md-12">
           <div class="banner"></div>
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Research</a></li>
+            <li><a href="#">Publications</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-4" span id="welcome">Hello. My name is Stacey Church.</div>
-        <div class="col-md-8">Totally generic subtitle.</div>
+      <div class="row" id="titlerow">
+        <div class="col-md-8" id="welcome">Stacey Church</div>
+        <div class="col-md-4" id="subtitle">
+          <p>Cat guardian</p>
+          <p>Bad dancer</p>
+          <p>Eater of food</p>
+        </div>
       </div>
     </div>
+  </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
